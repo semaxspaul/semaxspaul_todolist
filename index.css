@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.todo-grid, .js-input-section {
+    display: grid;
+    grid-template-columns: 50px 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.js-input-section {
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.js-todo {
+    grid-column: span 2;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.js-add-button, .js-del-button {
+    padding: 5px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+
+.js-del-button {
+    background-color: darkred;
+    border: none;
+}
